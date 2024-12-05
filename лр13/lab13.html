@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab13</title>
+    <link href="lab13.css" rel="stylesheet" media="all">
+</head>
+<body>
+    <form id="taskForm">
+        <h1>Список дел</h1>
+        <div>
+            <input  id="taskInput" type="text" placeholder="Введите название задачи">
+            <button type="button" class="buttonColorGreen" onclick="addTask()">Добавить</button>
+        </div>
+        <div class="filters">
+            <button type="button" class="buttonColorGreen" onclick="showTasks('all')">Показать все</button>
+            <button type="button" class="buttonColorGreen" onclick="showTasks('completed')">Показать выполненные</button>
+            <button type="button" class="buttonColorGreen" onclick="showTasks('notCompleted')">Показать не выполненные</button>
+        </div>
+        <span id="taskList"></span>
+    </form>
+    <script src="lab13.js"></script>
+</body>
+</html>
